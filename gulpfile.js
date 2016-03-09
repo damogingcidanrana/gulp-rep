@@ -47,7 +47,7 @@ var path = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
-        //.pipe(rigger())
+        .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(connect.reload());
 });
